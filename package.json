@@ -2,9 +2,12 @@
   "name": "test-interview",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://softkdev.github.io/test-interview",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
